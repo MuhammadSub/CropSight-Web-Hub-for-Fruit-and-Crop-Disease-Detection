@@ -1,0 +1,125 @@
+
+/*=========================
+    07. Start Category css 
+==========================*/
+
+/* Category Section CSS */ 
+
+.category-one{
+    background-color: #f8f6ef;
+    padding-bottom: 220px;
+    &:after,
+    &:before{
+        position: absolute;
+        content: '';
+        width: 100%;
+        left: 0;
+        background-size: contain;
+    }
+    &:before{
+        top: -15px;
+        background: url(../images/shape/top2.png) no-repeat center;
+        height: 16px;
+    }
+    &:after{
+        bottom: -24px;
+        height: 25px;
+        background: url(../images/shape/bottom2.png) no-repeat center;
+    }
+    & .shape{
+        position: absolute;
+        &.shape-one{
+            bottom: 150px;
+            left: 60px;
+        }
+        &.shape-two{
+            top: 85px;
+            right: 0;
+        }
+    }
+}
+
+/* Category Item CSS */ 
+
+.single-category-item{
+    & .category-img{
+        & img{
+            width: 100%;
+        }
+    }
+    & .category-info{
+        padding: 13px 20px;
+        & h3.title{
+            font-size: 20px;
+            line-height: 30px;
+        }
+        & .arrow-btn{
+            font-size: 20px;
+            color: $heading;
+        }
+        & h3.title,
+        & .arrow-btn{
+            &:hover{
+                color: $primary;
+            }
+        }
+    }
+}
+
+.category-wrapper{
+    position: relative;
+    background-color: #f8f6ef;
+    padding: 80px 90px 40px;
+    margin-left: -90px;
+    margin-right: -90px;
+    margin-bottom: -490px;
+    @media #{$lm}{
+        margin-left: 0;
+        margin-right: 0;
+        padding: 40px 50px 40px;
+    }
+}
+.single-category-box{
+    position: relative;
+    z-index: 1;
+    background-color: #fff;
+    overflow: hidden;
+    padding: 35px 30px;
+    border-radius: 7px;
+    &:hover{
+        &:after{
+            width: 100%;
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+    &:after{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        content: '';
+        width: 0%;
+        height: 5px;
+        border-radius: 0 0 7px 7px;
+        background-color: $primary;
+        z-index: -1;
+        visibility: hidden;
+        opacity: 0;
+        @include transition(.3s);
+    }
+    & .icon{
+        width: 200px;
+        height: 155px;
+        @extend %flex-center;
+        margin-bottom: 20px;
+    }
+    & .text{
+        & h3.title{
+            font-size: 22px;
+            line-height: 30px;
+            &:hover{
+                color: $primary;
+            }
+        }
+    }
+}

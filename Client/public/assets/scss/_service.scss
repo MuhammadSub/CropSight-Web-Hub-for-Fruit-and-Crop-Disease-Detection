@@ -1,0 +1,277 @@
+
+/*=========================
+    06. Start Service css 
+==========================*/
+
+
+/* Service Slider CSS */ 
+
+
+.service-slider-one{
+    margin-left: -15px;
+    margin-right: -15px;
+    & .single-service-item-two{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    & .slick-arrow{
+        position: absolute;
+        top: 50%;
+        @include transform(translateY(-50%));
+        cursor: pointer;
+        z-index: 1;
+        width: 55px;
+        height: 55px;
+        border-radius: 50%;
+        border: 1px solid $primary;
+        font-size: 20px;
+        color: $heading;
+        @extend %flex-center;
+        @include transition(.3s);
+        &:hover{
+            background-color: $primary;
+            border-color: transparent;
+            color: $heading;
+        }
+        &.prev{
+            left: -220px;
+            @media #{$lp}{
+                left: -40px;
+            }
+        }
+        &.next{
+            right: -220px;
+            @media #{$lp}{
+                right: -40px;
+            }
+        }
+    }
+}
+
+
+/* Service Section CSS */ 
+
+.service-one{
+    &:after,
+    &:before{
+        position: absolute;
+        content: '';
+        width: 100%;
+        left: 0;
+        background-size: contain;
+    }
+    &:before{
+        top: -15px;
+        background: url(../images/shape/top.png) no-repeat center;
+        height: 16px;
+    }
+    &:after{
+        bottom: -24px;
+        height: 25px;
+        background: url(../images/shape/bottom.png) no-repeat center;
+    }
+    & .shape{
+        position: absolute;
+        z-index: -1;
+        bottom: 0;
+        &.shape-one{
+            left: 35px;
+        }
+        &.shape-two{
+            right: 35px;
+        }
+    }
+}
+.service-two{
+    padding-bottom: 260px;
+    & .slick-arrow{
+        border: 1px solid #fff;
+        color: #fff;
+        &:hover{
+            background-color: #fff;
+            color: $heading;
+        }
+    }
+}
+
+
+/* Service Wrap CSS */ 
+
+.services-wrap-one{
+    transform: translateY(-100px);
+    padding-left: 90px;
+    padding-right: 90px;
+    border-radius: 12px;
+    @media #{$lm}{
+        padding-left: 30px;
+        padding-right: 30px; 
+    }
+}
+.popular-service{
+    & .img-holder{
+        & img{
+            width: 100%;
+        }
+    }
+}
+
+
+/* Service Item CSS */ 
+
+.service-box{
+    padding: 30px 30px 15px;
+    background-color: #181712;
+    border-radius: 7px;
+    border-bottom: 3px solid transparent;
+    @include transition(.3s);
+    &:hover{
+        border-color: $primary;
+    }
+    & .icon{
+        font-size: 60px;
+        line-height: 1;
+        color: $primary;
+        margin-bottom: 10px;
+    }
+    & .text{
+        & h3.title{
+            font-size: 17px;
+            font-weight: 700;
+            color: #fff;
+            line-height: 23px;
+            &:hover{
+                color: $primary;
+            }
+        }
+    }
+}
+
+.service-box-two{
+    padding: 0 20px;
+    @media #{$lm}{
+        padding: 0 25px;
+    }
+    & .icon{
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 85px;
+        height: 85px;
+        border-radius: 50%;
+        background-color: #fff;
+        margin-bottom: 19px;
+    }
+    & .text{
+        & h3.title{
+            font-size: 17px;
+            line-height: 23px;
+        }
+    }
+}
+.single-service-item{ 
+    display: flex;
+    &.card-rtl{
+        direction: rtl;
+        text-align: right;
+        & .icon{
+            margin-right: 0px;
+            margin-left: 30px;
+        }
+    }
+    & .icon{
+        flex: 0 0 90px;
+        max-width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        @extend %flex-center;
+        background-color: #f8f6ef;
+        margin-right: 30px;
+    }
+    & .text{
+        & h3{
+            font-size: 20px;
+            line-height: 30px;
+            margin-bottom: 2px;
+            &:hover{
+                color: $primary;
+            }
+        }
+    }
+}
+
+.single-service-item-two{
+    & .img-holder{
+        & img{
+            width: 100%;
+        }
+    }
+    & .text{
+        position: relative;
+        background-color: #fff;
+        padding: 20px 35px 80px;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -60px;
+        border-radius: 7px;
+        & h3.title{
+            font-size: 24px;
+        }
+        & .main-btn{
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            justify-content: center;
+            padding: 13px 30px;
+        }
+    }
+}
+
+
+
+
+/* Service Details CSS */ 
+
+.service-details-wrapper{
+    padding-right: 35px;
+    @media #{$lm}{
+        padding-right: 0;
+    }
+    & .content{
+        position: relative;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -80px;
+        background-color: #fff;
+        padding: 30px 45px 35px;
+        & h3.title{
+            margin-bottom: 10px;
+            @media #{$lm}{
+                font-size: 22px;
+                line-height: 30px;
+            }
+        }
+    }
+    & .service-content{
+        padding-top: 30px;
+        border-top: 1px solid rgba(31, 30, 23, .102);
+        & > p{
+            margin-bottom: 35px;
+        }
+        & .choose-item-list{
+            padding-right: 30%;
+            @media #{$lm}{
+                padding-right: 0;
+            }
+        }
+        & .content-img{
+            margin-bottom: 30px;
+        }
+        & > h4{
+            margin-bottom: 10px;
+        }
+    }
+}

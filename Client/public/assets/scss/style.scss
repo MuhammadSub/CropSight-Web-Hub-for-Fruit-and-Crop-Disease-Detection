@@ -1,0 +1,81 @@
+/*-----------------------------------------------------------------------------------
+
+    Template Name: Orgarium - Agriculture Farming HTML Template
+    Template URI: site.com
+    Description: Orgarium is a clean & modern PSD template which perfectly suited agriculture field, farm, farmers, eco solutions and organic food products. This template was created after a detailed analysis of other template-related websites and combines all the necessary features to meet the requirements of the pickiest customer.
+    Author: WebTend 
+    Author URI: https://webtend.net/
+    Version: 1.0
+
+
+--------------------------
+    CSS INDEX
+--------------------------
+    01. Start Default css 
+    02. Start Default css 
+    03. Start Hero css
+    04. Start About css 
+    05. Start Features css 
+    06. Start Service css
+    07. Start Category css 
+    08. Start Counter css 
+    09. Start Portfolio css
+    10. Start Elements css 
+    11. Start Team css 
+    12. Start Testimonial css 
+    13. Start Blog css 
+    14. Start Contact css
+    15. Start Footer css
+
+-----------------------------------------------------------------------------------*/
+
+@import 'variables';
+@import 'mixin';
+
+// common
+@import 'common';
+
+// Header
+@import 'header';
+
+// Hero
+@import 'hero';
+
+// About
+@import 'about';
+
+// Features
+@import 'features';
+
+// Service
+@import 'service';
+
+// Category
+@import 'category';
+
+// Counter
+@import 'counter';
+
+// Portfolio
+@import 'portfolio';
+
+// Elements
+@import 'elements';
+
+// Product
+@import 'product';
+
+// Team
+@import 'team';
+
+// Footer
+@import 'testimonial';
+
+// Features
+@import 'blog';
+
+// Footer
+@import 'contact';
+
+// Footer
+@import 'footer';

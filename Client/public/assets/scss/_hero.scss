@@ -1,0 +1,514 @@
+
+/*=========================
+    03. Start Hero css 
+==========================*/
+
+.hero-slider-one{
+    & .slick-arrow{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-59%);
+        cursor: pointer;
+        width: 55px;
+        height: 55px;
+        @extend %flex-center;
+        border:1px solid #fff;
+        border-radius: 50%;
+        color: #fff;
+        z-index: 1;
+        @include transition(.3s);
+        &:hover{
+            background-color: #fff;
+            border-color: transparent;
+            color: $heading;
+        }
+        &.prev{
+            left: 7.5%;
+            @media #{$xm}{
+                left: 10px;
+            }
+        }
+        &.next{
+            right: 7.5%;
+            @media #{$xm}{
+                right: 10px;
+            }
+        }
+    }
+}
+
+.hero-content{
+    & .tag-line{
+        font-size: 24px;
+        font-weight: 600;
+        text-decoration: underline;
+    }
+}
+.hero-content{
+    & .hero-button{
+        & a{
+            margin-bottom: 10px;
+            &:last-child{
+                margin-left: 10px;
+                @media #{$xss}{
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+}
+.hero-area-one{
+    & .hero-slider-one{
+        & .slick-arrow{
+            &:hover{
+                background-color: transparent;
+                color: $primary;
+                border-color: $primary;
+            }
+        }
+    }
+    & .single-slider{
+        padding: 190px 0 235px;
+        position: relative;
+        z-index: 1;
+        @media #{$xs}{
+            padding: 120px 0 165px;
+        }
+        & .image-layer{
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            transition: all 1.4s cubic-bezier(0.7, 0, 0.3, 1);
+            transform: scale(1.2);
+            &:after{
+                position: absolute;
+                top: 0;
+                left: 0;
+                content: '';
+                width: 100%;
+                height: 100%;
+                background-color: #1f1e17;
+                mix-blend-mode: multiply;
+                opacity: .75;
+                z-index: -1;
+            }
+        }
+        &.slick-current{
+            & .image-layer{
+                transform: scale(1);
+            }
+        }
+    }
+    & .hero-content{
+        position: relative;
+        z-index: 2;
+        & .tag-line{
+            color: #fff;
+            margin-bottom: 45px;
+        }
+        & h1{
+            font-family: $handlee;
+            color: #fff;
+            font-weight: 400;
+            font-size: 150px;
+            line-height: 140px;
+            letter-spacing: -.5px;
+            margin-bottom: 30px;
+            @media #{$lm}{
+                font-size: 52px;
+                line-height: 65px;
+            }
+            @media #{$xs}{
+                font-size: 36px;
+                line-height: 45px;
+            }
+        }
+    }
+}
+.hero-area-two{
+    .hero-slider-one{
+        & .slick-arrow{
+            
+            &.prev{
+                @media #{$xm}{
+                    left: 0;
+                }
+            }
+            &.next{
+                @media #{$xm}{
+                    right: 0;
+                }
+            }
+        }
+    }
+    & .single-slider{
+        position: relative;
+        padding: 150px 0;
+        & .image-layer{
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            transition: all 1.4s cubic-bezier(0.7, 0, 0.3, 1);
+            transform: scale(1.2);
+        }
+        .hero-content-inner{
+            position: relative;
+            z-index: 2;
+            @extend %flex-center;
+            background-color: #fff;
+            border-radius: 65% 50% 70% 50%/50% 60% 55% 70%;
+            width: 650px;
+            height: 550px;
+            margin: auto;
+            @media #{$md}{
+                width: 600px;
+                height: 550px;
+            }
+            @media #{$xs}{
+                width: 100%;
+                height: 460px;
+            }
+            @media #{$xss}{
+                width: 100%;
+                height: 460px;
+                border-radius: 10%;
+            }
+            & .hero-content{
+                padding: 20px;
+                & .tag-line{
+                    color: $heading;
+                    margin-bottom: 27px;
+                }
+                & h1{
+                    font-family: $handlee;
+                    font-weight: 400;
+                    font-size: 90px;
+                    line-height: 100px;
+                    letter-spacing: -.5px;
+                    margin-bottom: 30px;
+                    @media #{$lm}{
+                        font-size: 70px;
+                        line-height: 80px;
+                    }
+                    @media #{$xs}{
+                        font-size: 40px;
+                        line-height: 50px;
+                    }
+                }
+            }
+        }
+        &.slick-current{
+            & .image-layer{
+                transform: scale(1);
+            }
+        }
+    }
+}
+
+  
+.hero-area-three{
+    & .hero-slider-one{
+        & .slick-arrow{
+            &.prev{
+                @media #{$lp}{
+                    left: 2%;
+                }
+            }
+            &.next{
+                @media #{$lp}{
+                    right: 2%;
+                }
+            }
+        }
+    }
+    & .single-slider{
+        padding: 195px 0 190px;
+        @media #{$xm}{
+            padding: 190px 0 100px;
+        }
+        & .image-layer{
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            transition: all 1.4s cubic-bezier(0.7, 0, 0.3, 1);
+            transform: scale(1.2);
+            &:after{
+                position: absolute;
+                top: 0;
+                left: 0;
+                content: '';
+                width: 100%;
+                height: 100%;
+                background: rgba(31, 30, 23, 0.5);
+                z-index: -1;
+            }
+        }
+        &.slick-current{
+            & .image-layer{
+                transform: scale(1);
+            }
+        }
+        & .hero-content{
+            & .tag-line{
+                margin-bottom: 20px;
+            }
+            & h1{
+                font-size: 110px;
+                margin-bottom: 45px;
+                @media #{$lg}{
+                    font-size: 80px;
+                    line-height: 90px;
+                }
+                @media #{$xm}{
+                    font-size: 50px;
+                    line-height: 60px;
+                }
+            }
+        }
+        .brand-card{
+            position: absolute;
+            text-align: center;
+            bottom: 0;
+            right: 200px;
+            padding: 60px 40px;
+            border-radius: 122.64px 122.64px 0px 0px ;
+            @media #{$lg}{
+                right: 50px;
+            }
+            @media #{$xm}{
+                display: none;
+            }
+            & img{
+                margin: 0 auto 10px;
+            }
+            & h3{
+                color: #fff;
+                font-size: 36px;
+            }
+        }
+    }
+}
+
+
+.hero-area-four{
+    position: relative;
+    z-index: 1;
+    & .hero-arrows{
+        position: absolute;
+        bottom: 80px;
+        right: 19.25%;
+        z-index: 2;
+        display: flex;
+        @media #{$lp}{
+            right: 7.2%;
+        }
+        @media #{$lg}{
+            right: 4.6%;
+        }
+        & .slick-arrow{
+            width: 55px;
+            height: 55px;
+            background-color: #fff;
+            color: $heading;
+            @extend %flex-center;
+            cursor: pointer;
+            @include transition(.3s);
+            &:hover{
+                background-color: $primary;
+            }
+        }
+    }
+    & .hero-dots{
+        position: absolute;
+        bottom: 95px;
+        right: 27%;
+        z-index: 2;
+        @media #{$lp}{
+            right: 20%;
+        }
+        @media #{$lg}{
+            right: 20%;
+        }
+        & .slick-dots{
+            & li{
+                margin-left: 5px;
+                margin-right: 5px;
+                width: 12px;
+                height: 12px;
+                border-radius: 50%;
+                border: 3px solid #fff;
+                background-color: transparent;
+                @include transition(.4s);
+                &.slick-active{
+                    background-color: #fff;
+                    border-color: transparent;
+                }
+            }
+        }
+    }
+    & .single-slider{
+        position: relative;
+        padding: 163px 0 310px;
+        &.slick-current{
+            & .image-layer{
+                transform: scale(1);
+            }
+        }
+        & .image-layer{
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            transition: all 1.4s cubic-bezier(0.7, 0, 0.3, 1);
+            transform: scale(1.2);
+            &:after{
+                position: absolute;
+                top: 0;
+                left: 0;
+                content: '';
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.7);
+                mix-blend-mode: multiply;
+                z-index: -1;
+            }
+        }
+    }
+    & .hero-content{
+        @media #{$xm}{
+            margin-bottom: 60px;
+        }
+        & h1{
+            line-height: 1.3em;
+            margin-bottom: 35px;
+            @media #{$lm}{
+                font-size: 70px;
+                line-height: 1.2em;
+            }
+            @media #{$xs}{
+                font-size: 32px;
+                line-height: 1;
+            }
+        }
+    }
+    & .hero-play-box{
+        & .video-popup{
+            background-color: $primary;
+            color: $heading;
+        }
+    }
+}
+
+  
+
+
+
+.page-banner{
+    padding: 190px 0;
+    & .brand-card{
+        position: absolute;
+        bottom: -40px;
+        right: 15%;
+        display: block;
+        padding: 60px 45px;
+        background-color: #fff;
+        z-index: 2;
+        border-radius: 122.64px 122.64px 0px 0px;
+        box-shadow: 0px 10px 60px 0px rgba(208, 208, 208, 0.35);
+        @media #{$xm}{
+            right: 5%;
+            padding: 30px 25px;
+        }
+        & img{
+            margin-bottom: 10px;
+        }
+    }
+    &:before{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        content: '';
+        width: 100%;
+        height: 30px;
+        background: url(../images/bg/page-bg-after.png) no-repeat center;
+        background-size: cover;
+        z-index: 1;
+    }
+    &:after{
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: '';
+        width: 100%;
+        height: 100%;
+        background-color: rgba(31, 30, 23, 0.60);
+        mix-blend-mode: multiply;
+        z-index: -1;
+    }
+    & .page-title{
+        & h1{
+            color: #fff;
+            margin-bottom: 20px;
+            @media #{$lm}{
+                font-size: 48px;
+                line-height: 55px;
+            }
+            @media #{$xs}{
+                font-size: 30px;
+                line-height: 40px;
+            }
+        }
+        & .breadcrumbs-link{
+            & li{
+                display: inline-block;
+                color: #fff;
+                &:last-child{
+                    &:after{
+                        display: none;
+                    }
+                }
+                &:after{
+                    margin-left: 23px;
+                    margin-right: 19px;
+                    font-weight: 400;
+                    font-family: 'Font Awesome 5 Pro';
+                    content: '\f105';
+                }
+                & a{
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+.error-page-section{
+    padding: 100px 0 70px;
+    & .error-content{
+        & img{
+            margin-bottom: 100px;
+        }
+        & h3{
+            margin-bottom: 35px;
+        }
+    }
+}

@@ -1,0 +1,287 @@
+
+/*=======================
+    15. Start Footer css 
+=========================*/
+
+
+/* Footer Top CSS */ 
+
+.footer-top{
+    border: 1px solid rgba(255, 255, 255, .10);
+    border-top: none;
+    border-right: none;
+    @media #{$xm}{
+        border-right: 1px solid rgba(255, 255, 255, .10);
+        border-bottom: none;
+    }
+}
+.footer-contact-item{
+    & .contact-info{
+        border-right: 1px solid rgba(255, 255, 255, .10);
+        align-items: center;
+        padding: 40px 60px;
+        height: 100%;
+        @media #{$lg}{
+            padding: 30px 20px;
+        }
+        @media #{$xm}{
+            justify-content: center;
+            padding: 40px 30px;
+            border-right: none;
+            border-bottom: 1px solid rgba(255, 255, 255, .10);
+        }
+        @media #{$xss}{
+            padding: 40px 15px;
+        }
+        & .icon{
+            flex: 0 0 50px;
+            max-width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: $primary;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            color: #060501;
+            margin-right: 15px;
+        }
+        & .text{
+            & h5{
+                font-size: 18px;
+                color: rgba(255,255,255,.60);
+            }
+            & h6{
+                font-size: 16px;
+                color: #fff;
+                font-weight: 400;
+            }
+        }
+    }
+}
+/* Footer Section CSS */ 
+
+.footer-white{
+    & h1,h2,h3,h4,h5,h6{
+        color: #fff;
+    }
+    & a,
+    & P{
+        color: rgba(255, 255, 255, 0.70);
+    }
+}
+
+/* Footer Widget CSS */ 
+
+.footer-widget{
+    & h4.widget-title{
+        margin-bottom: 28px;
+    }
+}
+.footer-about-content{
+    margin-top: -10px;
+    padding-right: 100px;
+    @media #{$lg}{
+        padding-right: 0;
+    }
+    @media #{$xm}{
+        padding-right: 0;
+    }
+    & p{
+        margin-bottom: 15px;
+    }
+    & .social-box{
+        & h4{
+            font-size: 22px;
+            color: #fff;
+            font-weight: 700;
+        }
+        & ul.social-link{
+            & li{
+                margin-right: 5px;
+                & a{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    background-color: rgba(255, 255, 255, 0.1);
+                    font-size: 14px;
+                    color: rgba(255, 255, 255, 0.7);
+                    @include transition(.3s);
+                    &:hover{
+                        background-color: $primary;
+                        color: $heading;
+                    }
+                }
+            }
+        }
+    }
+}
+.footer-nav-widget{
+    @media #{$lg}{
+        padding-left: 50px;
+    }
+}
+.footer-widget-nav{
+    margin-top: -10px;
+    display: flex;
+    flex-wrap: wrap;
+    & ul{
+        width: 50%;
+        @media #{$lg}{
+            width: 100%;
+        }
+        @media #{$md}{
+            width: 50%;
+        }
+        @media #{$xs}{
+            width: 100%;
+        }
+        & li{
+            margin-bottom: 10px;
+            & a{
+                display: flex;
+                &:before{
+                    display: inline-flex;
+                    content: '\f105';
+                    font-weight: 400;
+                    font-family: 'Font Awesome 5 Pro';
+                    margin-right: 15px;
+                }
+                &:hover{
+                    color: $primary;
+                }
+            }
+        }
+    }
+}
+.recent-post-widget{
+    & .more-btn{
+        color: $primary;
+        text-decoration: underline;
+        &:after{
+            display: inline-block;
+            content: '\f0a9';
+            font-family: 'Font Awesome 5 Pro';
+            font-weight: 400;
+            margin-left: 8px;
+        }
+    }
+}
+.post-widget-wrap{
+    & li{
+        display: flex;
+        margin-bottom: 25px;
+        & img{
+            flex: 0 0 85px;
+            max-width: 85px;
+            height: 85px;
+            border-radius: 5px;
+            margin-right: 25px;
+        }
+        & .post-title-date{
+            & h3.title{
+                font-size: 16px;
+                line-height: 26px;
+                font-weight: 700;
+                & a{
+                    &:hover{
+                        color: $primary;
+                    }
+                }
+            }
+            & span.posted-on{
+                & i{
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}
+.footer-newsletter{
+    padding: 40px 50px 20px;
+    border-radius: 7px;
+    @media #{$xm}{
+        padding: 40px 30px 20px;
+    }
+    & .footer-text{
+        & h5{
+            font-size: 19px;
+            line-height: 28px;
+        }
+    }
+    & .newsletter-form{
+        & form{
+            & .form_control{
+                background-color: transparent;
+                border-bottom: 1px solid #1f1e17;
+                padding: 0;
+                font-weight: 500;
+                height: 53px;
+                margin-bottom: 20px;
+                &::placeholder{
+                    color: $heading;
+                }
+            }
+            & .main-btn{
+                padding: 14px 16px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+.footer-newsletter-one{
+    background-color: #181712;
+    & .newsletter-form{
+        & form{
+            & .form_control{
+                border-bottom: 1px solid rgba(255, 255, 255, .10);
+                color: rgba(255, 255, 255, .50);
+                &::placeholder{
+                    color: rgba(255, 255, 255, .50);
+                }
+            }
+        }
+    }
+}
+.footer-newsletter-two{
+    @include transform(translateY(-70px));
+    & .footer-text{
+        & h5{
+            color: $heading;
+        }
+    }
+    & .newsletter-form{
+        & form{
+            & .main-btn{
+                &.bordered-btn{
+                    &:hover{
+                        background-color: $dark-black;
+                        color: $primary;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Footer Copyright CSS */ 
+
+.footer-copyright{
+    padding: 28px 0;
+}
+.footer-bg{
+    &:after{
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: '';
+        width: 100%;
+        height: 100%;
+        background-color: #1f1e17;
+        mix-blend-mode: multiply;
+        z-index: -1;
+    }
+}

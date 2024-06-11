@@ -1,0 +1,210 @@
+
+/*=========================
+    04. Start About css 
+==========================*/
+
+/* About Card CSS */ 
+
+.food-card{
+    padding: 30px 20px 25px;
+    border: 1px solid rgba(44, 44, 44, 0.102);
+    border-radius: 7px;
+    @include transition(.3s);
+    &:hover{
+        background-color: $primary;
+        border-color: transparent;
+        & .icon{
+            & i{
+                color: $heading;
+            }
+        }
+    }
+    & .icon{
+        margin-bottom: 5px;
+        & i{
+            color: $primary;
+            font-size: 60px;
+            line-height: 1;
+        }
+    }
+}
+.theme-user-card{
+    padding: 25px 25px 5px;
+    text-align: center;
+    max-width: 230px;
+    max-height: 320px;
+    border-radius: 38px;
+    @media #{$xs}{
+        max-width: 270px;
+        min-width: 270px;
+    }
+    & h3{
+        font-family: $handlee;
+        font-weight: 400;
+        font-size: 31px;
+        line-height: 40px;
+        margin-bottom: 15px;
+    }
+    & img{
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+}
+
+
+/* About Tab CSS */ 
+
+.tab-content-box{
+    & .nav-tabs{
+        background-color: #fff;
+        border: none;
+        box-shadow: 0px 10px 60px 0px rgba(109, 109, 109, 0.1);
+        justify-content: center;
+        padding: 15px 30px;
+        @media #{$xs}{
+            padding: 15px 10px;
+        }
+        & .nav-item{
+            display: inline-flex;
+            &:after{
+                display: inline-block;
+                content: '|';
+                margin-left: 40px;
+                margin-right: 38px;
+                @media #{$xs}{
+                    margin-left: 20px;
+                    margin-right: 20px;
+                }
+            }
+            &:last-child{
+                &:after{
+                    display: none;
+                }
+            }
+        }
+        & .nav-link{
+            padding: 0;
+            border: none;
+            font-size: 18px;
+            font-weight: 800;
+            color: #bbbbbb;
+            &:after{
+                display: inline-block;
+                content: '\f358';
+                font-family: 'Font Awesome 5 Pro';
+                font-weight: 400;
+                margin-left: 10px;
+            }
+            &.active,
+            &:hover{
+                color: $heading;
+            }
+        }
+    }
+}
+
+
+/* About Content CSS */ 
+
+.about-one_content-box{
+    & .quote-text{
+        border-left: 5px solid $primary;
+        padding-left: 40px;
+    }
+    & .avatar-box{
+        & .thumb{
+            margin-right: 20px;
+        }
+    }
+}
+.about-one_image-box{
+    padding-left: 20px;
+    display: flex;
+    justify-content: flex-end;
+    & .about-img_one{
+        position: absolute;
+        left: 100px;
+        top: 0;
+        @media #{$lg}{
+            left: 0;
+        }
+        @media #{$xm}{
+            left: 80px;
+        }
+        &:after{
+            position: absolute;
+            content: '';
+            right: -10px;
+            bottom: -10px;
+            width: 100%;
+            height: 100%;
+            border-right: 10px solid #fff;
+            border-bottom: 10px solid #fff;
+        }
+    }
+    & .about-img_two{
+        margin-top: 60px;
+    }
+}
+.about-two_image-box{
+    .theme-user-card{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        @include transform(translate(-50%,-50%));
+    }
+}
+.about-three-image_box{
+    & .experience-box{
+        position: absolute;
+        bottom: 25px;
+        left: 85px;
+        display: inline-flex;
+        border-radius: 38px;
+        padding: 32px 20px;
+        max-width: 230px;
+        & h3{
+            font-size: 30px;
+            font-weight: 400;
+            line-height: 1.3em;
+            font-family: $handlee;
+        }
+    }
+    & .about-img_one{
+        border-radius: 12px;
+        width: 100%;
+    }
+    & .about-img_two{
+        border-radius: 15px;
+        width: 100%;
+    }
+}
+.about-four_image-box{
+    & .about-img_two{
+        position: absolute;
+        bottom: -37%;
+        left: 10%;
+    }
+}
+.about-five_image-box{
+    margin-top: -70px;
+}
+
+.about-section-two{
+    &:after{
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: "";
+        width: 50%;
+        height: 100%;
+        background-color: #fff;
+    }
+}
+.about-wrapper{
+    background-color: #fff;
+    position: relative;
+    z-index: 2;
+    margin-top: -80px;
+}

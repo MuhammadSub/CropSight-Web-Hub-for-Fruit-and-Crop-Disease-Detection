@@ -1,0 +1,21 @@
+.testimonial-one .slick-slide,
+.testimonial-slider-one .slick-slide,
+.recent-product-slider .slick-slide,
+.product-thumb-slider .slick-slide,
+.testimonial-slider-three .slick-slide {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.select-100 .nice-select,
+.select-100 .nice-select ul {
+  width: 100%;
+}
+
+.c-pointer {
+  cursor: pointer;
+}
+
+html {
+  scroll-behavior: smooth;
+}

@@ -1,0 +1,33 @@
+
+// Font Family
+
+$handlee: 'Handlee', cursive;
+
+$manrope: 'Manrope', sans-serif;
+
+// Colors
+
+$heading: #2c2c2c;
+
+$text-color: #767676;
+
+$primary: #eece38;
+
+// Bg color
+
+$light-gray: #f8f6ef;
+
+$dark-black: #1f1e17;
+
+
+// Responsive Variables
+$xxl: 'only screen and (min-width: 1651px) and (max-width: 1750px)';
+$lp: 'only screen and (min-width: 1200px) and (max-width: 1650px)';
+$xl: 'only screen and (min-width: 1200px)';
+$lm : '(max-width: 1199px)';
+$lg : 'only screen and (min-width: 992px) and (max-width: 1199px)';
+$xm:'(max-width: 991px)';
+$md:'only screen and (min-width: 768px) and (max-width: 991px)';
+$xs:'(max-width: 767px)';
+$xss:'(max-width: 450px)';
+$sm: 'only screen and (min-width: 451px) and (max-width: 767px)';

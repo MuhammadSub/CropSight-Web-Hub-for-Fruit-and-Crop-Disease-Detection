@@ -1,0 +1,86 @@
+@font-face {
+    font-family: "flaticon";
+    src: url("./flaticon.ttf?89b5aab3b2e9a4a702085233f4191adf") format("truetype"),
+url("./flaticon.woff?89b5aab3b2e9a4a702085233f4191adf") format("woff"),
+url("./flaticon.woff2?89b5aab3b2e9a4a702085233f4191adf") format("woff2"),
+url("./flaticon.eot?89b5aab3b2e9a4a702085233f4191adf#iefix") format("embedded-opentype"),
+url("./flaticon.svg?89b5aab3b2e9a4a702085233f4191adf#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon-placeholder:before {
+    content: "\f101";
+}
+.flaticon-email:before {
+    content: "\f102";
+}
+.flaticon-harvest:before {
+    content: "\f103";
+}
+.flaticon-tractor:before {
+    content: "\f104";
+}
+.flaticon-agriculture:before {
+    content: "\f105";
+}
+.flaticon-social-care:before {
+    content: "\f106";
+}
+.flaticon-wheat-2:before {
+    content: "\f107";
+}
+.flaticon-wheat-sack:before {
+    content: "\f108";
+}
+.flaticon-grape:before {
+    content: "\f109";
+}
+.flaticon-cow:before {
+    content: "\f10a";
+}
+.flaticon-fish:before {
+    content: "\f10b";
+}
+.flaticon-healthy-food:before {
+    content: "\f10c";
+}
+.flaticon-planet-earth:before {
+    content: "\f10d";
+}
+.flaticon-cabbage:before {
+    content: "\f10e";
+}
+.flaticon-farming:before {
+    content: "\f10f";
+}
+.flaticon-agriculture-1:before {
+    content: "\f110";
+}
+.flaticon-cow-1:before {
+    content: "\f111";
+}
+.flaticon-tractor-1:before {
+    content: "\f112";
+}
+.flaticon-field:before {
+    content: "\f113";
+}
+.flaticon-phone-call:before {
+    content: "\f114";
+}
+.flaticon-agriculture-2:before {
+    content: "\f115";
+}
+.flaticon-industry:before {
+    content: "\f116";
+}

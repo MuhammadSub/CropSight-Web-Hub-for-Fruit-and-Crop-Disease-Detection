@@ -1,0 +1,237 @@
+
+/*=========================
+    05. Start Features css 
+==========================*/
+
+/* Features Wrap CSS */ 
+
+.features-wrap-one{
+    background-color: #f8f6ef;
+    padding: 50px 60px 20px;
+    margin-top: -80px;
+    position: relative;
+    z-index: 2;
+    @media #{$lm}{
+        padding: 50px 30px 20px;
+    }
+}
+.features-wrap-two{
+    display: flex;
+    flex-wrap: wrap;
+    @media #{$xs}{
+        padding: 0 15px;
+    }
+    & .features-item-two{
+        flex: 0 0 25%;
+        max-width: 25%;
+        @media #{$lm}{
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+        @media #{$xs}{
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+    }
+}
+
+/* Features Item CSS */
+
+.features-item{
+    padding-right: 50px;
+    position: relative;
+    z-index: 1;
+    @media #{$lp}{
+        padding-right: 0;
+    }
+    @media #{$lm}{
+        padding-right: 0;
+    }
+    & .fill-number{
+        position: absolute;
+        top: 30px;
+        left: 20px;
+        font-size: 85px;
+        line-height: 1;
+        letter-spacing: -0.06em;
+        color: transparent;
+        -webkit-text-stroke-width: 1px;
+        font-weight: 800;
+        z-index: -1;
+        -webkit-text-stroke-color: rgba(44, 44, 44, 0.08);
+    }
+    & .icon{
+        flex: 0 0 65px;
+        max-width: 65px;
+        height: 65px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $primary;
+        color: $heading;
+        font-size: 40px;
+        margin-right: 25px;
+    }
+    & .text{
+        & h5{
+            padding-right: 40px;
+            margin-bottom: 9px;
+            @media #{$lp}{
+                padding-right: 0;
+            }
+            @media #{$lm}{
+                padding-right: 0;
+            }
+        }
+    }
+}
+
+.features-item-two{
+    position: relative;
+    z-index: 1;
+    padding: 65px 90px;
+    display: flex;
+    align-items: center;
+    border-right: 1px solid rgba(0, 0, 0, .071);
+    @media #{$lp}{
+        padding: 65px 30px;
+    }
+    @media #{$lm}{
+        border:1px solid rgba(0, 0, 0, .071);
+    }
+    @media #{$xm}{
+        padding: 65px 30px;
+    }
+    .fill-number{
+        position: absolute;
+        top: 30px;
+        left: 50px;
+        font-size: 85px;
+        line-height: 1;
+        letter-spacing: -0.06em;
+        color: transparent;
+        -webkit-text-stroke-width: 1px;
+        font-weight: 800;
+        z-index: -1;
+        -webkit-text-stroke-color: rgba(44, 44, 44, 0.08);
+    }
+    & .icon{
+        flex: 0 0 65px;
+        max-width: 65px;
+        height: 65px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $primary;
+        color: $heading;
+        font-size: 40px;
+        margin-right: 25px;
+    }
+    & .text{
+        & h5{
+            margin-bottom: 9px;
+        }
+    }
+}
+.features-item-three{
+    border: 1px solid rgba(0, 0, 0, .071);
+    padding: 30px 35px;
+    align-items: center;
+    @media #{$lm}{
+        padding: 30px 20px;
+    }
+    & .icon{
+        flex: 0 0 65px;
+        max-width: 65px;
+        height: 65px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $primary;
+        color: $heading;
+        font-size: 40px;
+        margin-right: 25px;
+    }
+    & .text{
+        & h5{
+            margin-bottom: 9px;
+        }
+    }
+}
+
+
+/* Why Choose CSS */
+
+.why-choose-one{
+    & .shape{
+        position: absolute;
+        &.shape-one{
+            bottom: 100px;
+            left: 10%;
+        }
+        &.shape-two{
+            right: 55px;
+            top: 115px;
+        }
+    }
+}
+
+.choose-one_content-box{
+    @media #{$xm}{
+        padding-top: 100px;
+    }
+    & .choose-item-list{
+        & .single-choose-item{
+            &:after{
+                position: absolute;
+                content: '';
+                top: 30px;
+                left: 15px;
+                height: 100%;
+                border-left: 1px dashed rgba(44, 44, 44, .149);
+                z-index: -1;
+            }
+        }
+    }
+}
+.choose-one_img-box{
+    padding-right: 70px;
+    & .choose-img_two{
+        position: absolute;
+        right: 0;
+        bottom: -100px;
+    }
+}
+.single-choose-item{
+    position: relative;
+    display: flex;
+    &:last-child{
+        &:after{
+            display: none;
+        }
+    }
+    &:before{
+        display: inline-flex;
+        content: '\f00c';
+        font-weight: 700;
+        color: $heading;
+        font-family: 'Font Awesome 5 Pro';
+        flex: 0 0 30px;
+        max-width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: $primary;
+        justify-content: center;
+        align-items: center;
+        margin-right: 20px;
+    }
+    & .text{
+        margin-top: -5px;
+        & h5{
+            margin-bottom: 5px;
+        }
+    }
+}

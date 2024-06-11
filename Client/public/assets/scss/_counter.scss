@@ -1,0 +1,156 @@
+
+/*=========================
+    08. Start Counter css 
+==========================*/
+
+/* Contact Wrapper CSS */ 
+
+.counter-wrap-one{
+    margin: 0 -20px;
+    padding: 20px;
+    border: 1px solid rgba(44, 44, 44, 0.1);
+    @media #{$xm}{
+        margin: 0;
+    }
+    .counter-inner-box{
+        border: 1px solid rgba(44, 44, 44, .102);
+        background-color: #fff;
+        box-shadow: 0px 10px 30px 0px rgba(217, 217, 217, 0.3);
+        @media #{$xm}{
+            border: none;
+        }
+    }
+}
+.counter-wrap-two{
+    border-top: 1px solid rgba(255, 255, 255, .2);
+}
+
+/* Contact Section CSS */ 
+
+.fun-fact-two{
+    & .fun-three_img{
+        position: absolute;
+        bottom: 130px;
+        right: 19%;
+        @media #{$lp}{
+            right: 10%;
+        }
+        @media #{$lm}{
+            display: none;
+        }
+    }
+}
+
+
+/* Contact Item CSS */ 
+
+.counter-item{
+    border-right: 1px solid rgba(44, 44, 44, .102);
+    @media #{$xm}{
+        border-right: none;
+    }
+    &:last-child{
+        border-right: none;
+    }
+    & .counter-inner{
+        padding: 45px 45px;
+        @media #{$lg}{
+            padding: 45px 18px;
+        }
+        @media #{$xm}{
+            padding: 45px 40px;
+            border: 1px solid rgba(44, 44, 44, .102);
+            text-align: center;
+        }
+        & p{
+            font-weight: 600;
+        }
+    }
+}
+.counter-item-two{
+    background-color: $light-gray;
+    padding: 40px 35px 30px;
+    border-radius: 5px;
+    @include transition(.3s);
+    & .hover-icon{
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        z-index: -1;
+        opacity: 0;
+        visibility: hidden;
+        @include transition(.4s);
+        & i{
+            font-size: 120px;
+            line-height: 1;
+            color: rgb(255 255 255 / 3%);
+        }
+    }
+    &:hover{
+        background-color: $dark-black;
+        & .hover-icon{
+            visibility: visible;
+            opacity: 1;
+        }
+        & .text{
+            & h2.number,
+            & p{
+                color: #fff
+            }
+        }
+    }
+    & .icon{
+        @extend %flex-center;
+        width: 65px;
+        height: 65px;
+        border-radius: 50%;
+        background-color: $primary;
+        margin-bottom: 20px;
+        & i{
+            font-size: 35px;
+            color: $heading;
+        }
+    }
+    & .text{
+        & h2.number{
+            font-size: 35px;
+            line-height: 1.3em;
+        }
+        & p{
+            font-weight: 600;
+        }
+    }
+}
+
+.single-counter-item{
+    @media #{$xm}{
+        text-align: center;
+    }
+}
+
+
+.single-counter-card{
+    background-color: #fff;
+    padding: 30px 30px 20px;
+    border-radius: 7px;
+    @media #{$lm}{
+        padding: 30px 20px 20px;
+    }
+    & .icon{
+        & i{
+            color: $primary;
+            font-size: 50px;
+        }
+    }
+    & .text{
+        & h2{
+            @media #{$lm}{
+                font-size: 32px;
+                line-height: 45px;
+            }
+        }
+        & p{
+            font-weight: 600;
+        }
+    }
+}

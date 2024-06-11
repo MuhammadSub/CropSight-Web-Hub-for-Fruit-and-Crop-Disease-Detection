@@ -1,0 +1,113 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?89b5aab3b2e9a4a702085233f4191adf") format("truetype"),
+url("./flaticon.woff?89b5aab3b2e9a4a702085233f4191adf") format("woff"),
+url("./flaticon.woff2?89b5aab3b2e9a4a702085233f4191adf") format("woff2"),
+url("./flaticon.eot?89b5aab3b2e9a4a702085233f4191adf#iefix") format("embedded-opentype"),
+url("./flaticon.svg?89b5aab3b2e9a4a702085233f4191adf#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "placeholder": "\f101",
+    "email": "\f102",
+    "harvest": "\f103",
+    "tractor": "\f104",
+    "agriculture": "\f105",
+    "social-care": "\f106",
+    "wheat-2": "\f107",
+    "wheat-sack": "\f108",
+    "grape": "\f109",
+    "cow": "\f10a",
+    "fish": "\f10b",
+    "healthy-food": "\f10c",
+    "planet-earth": "\f10d",
+    "cabbage": "\f10e",
+    "farming": "\f10f",
+    "agriculture-1": "\f110",
+    "cow-1": "\f111",
+    "tractor-1": "\f112",
+    "field": "\f113",
+    "phone-call": "\f114",
+    "agriculture-2": "\f115",
+    "industry": "\f116",
+);
+
+.flaticon-placeholder:before {
+    content: map-get($flaticon-map, "placeholder");
+}
+.flaticon-email:before {
+    content: map-get($flaticon-map, "email");
+}
+.flaticon-harvest:before {
+    content: map-get($flaticon-map, "harvest");
+}
+.flaticon-tractor:before {
+    content: map-get($flaticon-map, "tractor");
+}
+.flaticon-agriculture:before {
+    content: map-get($flaticon-map, "agriculture");
+}
+.flaticon-social-care:before {
+    content: map-get($flaticon-map, "social-care");
+}
+.flaticon-wheat-2:before {
+    content: map-get($flaticon-map, "wheat-2");
+}
+.flaticon-wheat-sack:before {
+    content: map-get($flaticon-map, "wheat-sack");
+}
+.flaticon-grape:before {
+    content: map-get($flaticon-map, "grape");
+}
+.flaticon-cow:before {
+    content: map-get($flaticon-map, "cow");
+}
+.flaticon-fish:before {
+    content: map-get($flaticon-map, "fish");
+}
+.flaticon-healthy-food:before {
+    content: map-get($flaticon-map, "healthy-food");
+}
+.flaticon-planet-earth:before {
+    content: map-get($flaticon-map, "planet-earth");
+}
+.flaticon-cabbage:before {
+    content: map-get($flaticon-map, "cabbage");
+}
+.flaticon-farming:before {
+    content: map-get($flaticon-map, "farming");
+}
+.flaticon-agriculture-1:before {
+    content: map-get($flaticon-map, "agriculture-1");
+}
+.flaticon-cow-1:before {
+    content: map-get($flaticon-map, "cow-1");
+}
+.flaticon-tractor-1:before {
+    content: map-get($flaticon-map, "tractor-1");
+}
+.flaticon-field:before {
+    content: map-get($flaticon-map, "field");
+}
+.flaticon-phone-call:before {
+    content: map-get($flaticon-map, "phone-call");
+}
+.flaticon-agriculture-2:before {
+    content: map-get($flaticon-map, "agriculture-2");
+}
+.flaticon-industry:before {
+    content: map-get($flaticon-map, "industry");
+}
